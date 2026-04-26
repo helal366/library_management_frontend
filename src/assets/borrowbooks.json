@@ -1,0 +1,66 @@
+[
+  {
+    "bookTitle": "Sapiens",
+    "isbn": "9780062316097",
+    "totalQuantity": 1,
+    "dueDate": "2026-05-03T10:27:46.134Z",
+    "createdAt": "2026-04-26T10:27:46.136Z",
+    "updatedAt": "2026-04-26T10:27:46.136Z"
+  },
+  {
+    "bookTitle": "1984",
+    "isbn": "9780451524935",
+    "totalQuantity": 2,
+    "dueDate": "2026-05-05T09:15:30.000Z",
+    "createdAt": "2026-04-27T09:15:30.000Z",
+    "updatedAt": "2026-04-27T09:15:30.000Z"
+  },
+  {
+    "bookTitle": "The Great Gatsby",
+    "isbn": "9780743273565",
+    "totalQuantity": 1,
+    "dueDate": "2026-05-01T14:20:10.000Z",
+    "createdAt": "2026-04-25T14:20:10.000Z",
+    "updatedAt": "2026-04-25T14:20:10.000Z"
+  },
+  {
+    "bookTitle": "The Hobbit",
+    "isbn": "9780547928227",
+    "totalQuantity": 3,
+    "dueDate": "2026-05-08T11:00:00.000Z",
+    "createdAt": "2026-04-28T11:00:00.000Z",
+    "updatedAt": "2026-04-28T11:00:00.000Z"
+  },
+  {
+    "bookTitle": "A Brief History of Time",
+    "isbn": "9780553380163",
+    "totalQuantity": 1,
+    "dueDate": "2026-05-02T08:45:00.000Z",
+    "createdAt": "2026-04-26T08:45:00.000Z",
+    "updatedAt": "2026-04-26T08:45:00.000Z"
+  },
+  {
+    "bookTitle": "Harry Potter and the Sorcerer's Stone",
+    "isbn": "9780590353427",
+    "totalQuantity": 2,
+    "dueDate": "2026-05-10T16:30:00.000Z",
+    "createdAt": "2026-04-29T16:30:00.000Z",
+    "updatedAt": "2026-04-29T16:30:00.000Z"
+  },
+  {
+    "bookTitle": "The Diary of a Young Girl",
+    "isbn": "9780553296983",
+    "totalQuantity": 1,
+    "dueDate": "2026-05-04T12:00:00.000Z",
+    "createdAt": "2026-04-27T12:00:00.000Z",
+    "updatedAt": "2026-04-27T12:00:00.000Z"
+  },
+  {
+    "bookTitle": "The Art of War",
+    "isbn": "9781599869773",
+    "totalQuantity": 4,
+    "dueDate": "2026-05-06T10:10:00.000Z",
+    "createdAt": "2026-04-28T10:10:00.000Z",
+    "updatedAt": "2026-04-28T10:10:00.000Z"
+  }
+]
