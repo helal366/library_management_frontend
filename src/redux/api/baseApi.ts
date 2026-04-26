@@ -1,9 +1,10 @@
 import type { IBorrowRequest, IBorrowResponse } from '@/interfaces/interfaces';
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 
+const baseUrl = import.meta.env.VITE_API_URL;
 export const baseApi = createApi({
     reducerPath: 'baseApi',
-    baseQuery: fetchBaseQuery({baseUrl: 'https://library-management-backend-xi-gilt.vercel.app/'}),
+    baseQuery: fetchBaseQuery({baseUrl: baseUrl}),
     tagTypes: ['Books'],
     endpoints: (builder)=> ({
         getBooks: builder.query({
