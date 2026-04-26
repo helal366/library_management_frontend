@@ -38,3 +38,10 @@ export interface IBorrowResponse{
     dueDate: string
   }
 }
+
+export interface IBorrowSummary {
+  bookTitle: string;
+  isbn: string;
+  totalQuantity: number;
+  dueDate: string;
+}
