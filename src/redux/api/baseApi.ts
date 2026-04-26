@@ -7,7 +7,7 @@ export const baseApi = createApi({
     baseQuery: fetchBaseQuery({baseUrl: baseUrl}),
     tagTypes: ['Books', 'Borrow'],
     endpoints: (builder)=> ({
-        getBooks: builder.query<IBook[], void>({
+        getBooks: builder.query<{books:IBook[]}, void>({
             query: ()=>'/books',
             providesTags: ['Books']
         }),
@@ -43,7 +43,7 @@ export const baseApi = createApi({
             }),
             invalidatesTags: ['Books', 'Borrow']
         }),
-        getBorrowSummary: builder.query<IBorrowSummary[], void>({
+        getBorrowSummary: builder.query<{summary:IBorrowSummary[]}, void>({
             query: ()=>"/borrow_books",
             providesTags: ['Borrow']
         }),

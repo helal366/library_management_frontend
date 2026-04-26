@@ -13,7 +13,7 @@ export default function BorrowSummary() {
     return <p className="text-center mt-10 text-red-500">Failed to load data</p>;
   }
 
-  const summary = data || [];
+  const summary = data?.summary || [];
 
   return (
     <div className="p-6">
@@ -30,7 +30,7 @@ export default function BorrowSummary() {
           </thead>
 
           <tbody>
-            {summary.length === 0 ? (
+            {summary?.length === 0 ? (
               <tr>
                 <td colSpan={3} className="text-left p-4">
                   No data found

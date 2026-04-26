@@ -44,14 +44,14 @@ const AllBooks = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {data?.length === 0 ? (
+            {data?.books?.length === 0 ? (
               <TableRow>
                 <TableCell colSpan={7} className="text-center">
                     No books found
                 </TableCell>
               </TableRow>
             ):(
-                data?.map((book: IBook) => (
+                data?.books?.map((book: IBook) => (
               <TableRow key={book._id || book.isbn }>
                 <TableCell className="font-medium ">{book.title}</TableCell>
                 <TableCell>{book.author}</TableCell>
@@ -62,7 +62,7 @@ const AllBooks = () => {
                   'text-green-800': book.isAvailable === true,
                   'text-red-700': book.isAvailable === false,
                 })}>
-                  {book.isAvailable ? 'Available' : 'Unvailable'}
+                  {book.isAvailable ? 'Available' : 'Unavilable'}
                 </TableCell>
                 <TableCell className="flex justify-end gap-5">
                   <button type='button' className='cursor-pointer' onClick={async()=>{
