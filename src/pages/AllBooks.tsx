@@ -44,14 +44,14 @@ const AllBooks = () => {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {data?.books?.length === 0 ? (
+            {data?.length === 0 ? (
               <TableRow>
                 <TableCell colSpan={7} className="text-center">
                     No books found
                 </TableCell>
               </TableRow>
             ):(
-                data?.books?.map((book: IBook) => (
+                data?.map((book: IBook) => (
               <TableRow key={book._id || book.isbn }>
                 <TableCell className="font-medium ">{book.title}</TableCell>
                 <TableCell>{book.author}</TableCell>

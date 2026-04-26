@@ -1,4 +1,5 @@
 
+import type { IBorrowSummary } from '@/interfaces/interfaces';
 import { useGetBorrowSummaryQuery } from '@/redux/api/baseApi';
 
 export default function BorrowSummary() {
@@ -12,7 +13,7 @@ export default function BorrowSummary() {
     return <p className="text-center mt-10 text-red-500">Failed to load data</p>;
   }
 
-  const summary = data?.summary || [];
+  const summary = data || [];
 
   return (
     <div className="p-6">
@@ -36,7 +37,7 @@ export default function BorrowSummary() {
                 </td>
               </tr>
             ) : (
-              summary.map((item: any, index: number) => (
+              summary.map((item: IBorrowSummary, index: number) => (
                 <tr key={index} className="text-center">
                   <td className="p-3 border whitespace-nowrap">{item.bookTitle}</td>
                   <td className="p-3 border whitespace-nowrap">{item.isbn}</td>
